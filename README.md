@@ -1,3 +1,4 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/aki1ina/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/aki1ina/python-project-lvl1/actions)
 
+[![Pylint](https://github.com/aki1ina/python-project-lvl1/actions/workflows/pylint.yml/badge.svg)](https://github.com/aki1ina/python-project-lvl1/actions/workflows/pylint.yml)
