@@ -3,10 +3,10 @@ name: Pylint
 on: [push]
 
 jobs:
-        my-job:
+        check-job:
                 runs-on: ubuntu-latest
                 steps: 
-                        - name: my-step
+                        - name: check-step
                           run:
                                 pip install poetry
                                 make lint
