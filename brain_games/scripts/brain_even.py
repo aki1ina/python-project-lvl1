@@ -22,6 +22,8 @@ def main():
         i = i + 1
     if n == 0:
         print('Congratulations, ' + name_user + '!')
+    else:
+        print('Sorry, ' + name_user + ', you lose!')
 
 
 if __name__ == '__main__':
