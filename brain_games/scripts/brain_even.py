@@ -9,21 +9,24 @@ def main():
     print('Hello, {}!'.format(name_user))
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 1
-    n = 0
     while i <= 3:
-        number = random.randrange(0, 100, 1)
-        print('Question: ' + str(number))
-        answer = prompt.string('Your answer: ')
-        if (number % 2 == 0 and answer == 'yes') or (number % 2 != 0 and answer == 'no'):
-            print('Correct!')
+        question = random.randrange(0, 100, 1)
+        print('Question: ' + str(question))
+        answer_user = prompt.string('Your answer: ')
+        if question % 2 == 0: 
+            answer = 'yes'
         else:
-            n = n + 1
-
-        i = i + 1
-    if n == 0:
-        print('Congratulations, ' + name_user + '!')
+            answer = 'no'
+        if answer == answer_user:
+            print('Correct!')
+            i = i + 1
+        else:
+            i = 10
+    if i == 10:
+        print(str(answer_user) + ' is wrong answer . Correct answer was ' + str(answer) + '.')
+        print("Let's try again, " + name_user + "!")
     else:
-        print('Sorry, ' + name_user + ', you lose!')
+        print('Congratulations, ' + name_user + '!')
 
 
 if __name__ == '__main__':
