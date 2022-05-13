@@ -5,9 +5,10 @@ def template(name_game):
     print('Welcome to the Brain Games!')
     name_user = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name_user))
-    print(rules)
+    print(name_game.rules)
     i = 1
     while i <= 3:
+        question, answer = name_game.question_answer()
         print('Question: ' + str(question))
         answer_user = prompt.string('Your answer: ')
         if answer == answer_user:
