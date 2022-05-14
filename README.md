@@ -5,4 +5,4 @@
 
 <a href="https://codeclimate.com/github/aki1ina/python-project-lvl1-1/maintainability"><img src="https://api.codeclimate.com/v1/badges/49cfd3ad26dd3cb7e2ec/maintainability" /></a>
 
-https://asciinema.org/a/3BqmiYcTUvijO39T8zAiyilnc
+brain-even <a href="https://asciinema.org/a/ppYxC5T4xwLjs9bfhlQKiXdQn" target="_blank"><img src="https://asciinema.org/a/ppYxC5T4xwLjs9bfhlQKiXdQn.svg" /></a>
