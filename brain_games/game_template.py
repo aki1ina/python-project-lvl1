@@ -17,7 +17,7 @@ def template(name_game):
         else:
             i = 10
     if i == 10:
-        print(str(answer_user) + ' is wrong answer. Correct answer was ' + str(answer) + '.')
+        print(str.capitalize(answer_user) + ' is wrong answer, сorrect answer was ' + str(answer) + '.')
         print("Let's try again, " + name_user + "!")
     else:
         print('Congratulations, ' + name_user + '!')
