@@ -21,4 +21,3 @@ def question_answer():
         else:
             answer = 'no'
     return question, answer
-    

@@ -16,4 +16,3 @@ def question_answer():
         answer = str(number1 * number2)
     question = str(number1) + action + str(number2)
     return question, answer
-    
