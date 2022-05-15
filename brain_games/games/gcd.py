@@ -11,4 +11,3 @@ def question_answer():
     question = str(number1) + ' ' + str(number2)
     answer = str(math.gcd(number1, number2))
     return question, answer
-    
