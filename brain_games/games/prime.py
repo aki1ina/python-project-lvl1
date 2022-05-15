@@ -3,6 +3,7 @@ import random
 
 rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+
 def question_answer():
     question = random.randint(1, 100)
     check = 0
@@ -20,3 +21,4 @@ def question_answer():
         else:
             answer = 'no'
     return question, answer
+    

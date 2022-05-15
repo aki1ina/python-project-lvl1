@@ -3,6 +3,7 @@ import random
 
 rules = 'What number is missing in the progression?'
 
+
 def question_answer():
     number = random.randint(1, 100)
     question = ''

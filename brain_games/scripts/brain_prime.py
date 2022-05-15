@@ -2,6 +2,7 @@
 from brain_games.games import prime
 from brain_games.game_template import template
 
+
 def main():
     template(prime)
 
