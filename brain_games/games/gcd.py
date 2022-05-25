@@ -1,5 +1,4 @@
 import random
-import math
 
 
 rules = 'Find the greatest common divisor of given numbers.'
@@ -8,6 +7,14 @@ rules = 'Find the greatest common divisor of given numbers.'
 def question_answer():
     number1 = random.randint(0, 150)
     number2 = random.randint(0, 150)
-    question = str(number1) + ' ' + str(number2)
-    answer = str(math.gcd(number1, number2))
+    question = f'{number1} {number2}'
+    answer = get_answer(number1, number2)
     return question, answer
+
+
+def get_answer(number1, number2):
+    while number2 !=0:
+        if number1 > number2:
+            number1, number2 = number2, number1
+        number2 = number2 % number1
+    return str(number1)
