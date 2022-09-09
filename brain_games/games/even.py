@@ -4,10 +4,13 @@ import random
 rules = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
+def is_even(question):
+    if question % 2 != 0:
+        return False
+    return True
+
+
 def question_answer():
     question = random.randrange(0, 100, 1)
-    if question % 2 == 0:
-        answer = 'yes'
-    else:
-        answer = 'no'
+    answer = 'yes' if is_even(question) else 'no'
     return question, answer
