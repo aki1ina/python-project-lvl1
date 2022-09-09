@@ -10,7 +10,7 @@ def is_even(question):
     return True
 
 
-def question_answer():
+def get_question_and_answer():
     question = random.randrange(0, 100, 1)
     answer = 'yes' if is_even(question) else 'no'
     return question, answer

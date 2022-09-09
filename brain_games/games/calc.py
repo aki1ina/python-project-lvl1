@@ -4,7 +4,7 @@ import random
 rules = 'What is the result of the expression?'
 
 
-def question_answer():
+def get_question_and_answer():
     number1 = random.randint(0, 150)
     number2 = random.randint(0, 150)
     action = random.choice([' + ', ' - ', ' * '])

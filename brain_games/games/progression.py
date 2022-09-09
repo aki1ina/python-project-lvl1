@@ -4,7 +4,7 @@ import random
 rules = 'What number is missing in the progression?'
 
 
-def question_answer():
+def get_question_and_answer():
     number = random.randint(1, 100)
     question = ''
     step = random.randint(1, 10)

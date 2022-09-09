@@ -12,7 +12,7 @@ def get_answer(number1, number2):
     return str(number1)
 
 
-def question_answer():
+def get_question_and_answer():
     number1 = random.randint(0, 150)
     number2 = random.randint(0, 150)
     question = f'{number1} {number2}'
