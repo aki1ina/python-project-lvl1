@@ -4,20 +4,23 @@ import random
 rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def question_answer():
-    question = random.randint(1, 100)
+def is_prime(question):
     check = 0
     divider = 2
     if question < 2:
-        answer = 'no'
+        return False
     else:
         while divider <= question // 2:
             if question % divider == 0:
                 check += 1
                 divider = question
             divider += 1
-        if check == 0:
-            answer = 'yes'
-        else:
-            answer = 'no'
+        if check != 0:
+            return False
+    return True
+
+
+def question_answer():
+    question = random.randint(1, 100)
+    answer = 'yes' if is_prime(question) else 'no'
     return question, answer
