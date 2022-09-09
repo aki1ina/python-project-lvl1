@@ -13,7 +13,7 @@ def question_answer():
 
 
 def get_answer(number1, number2):
-    while number2 !=0:
+    while number2 != 0:
         if number1 > number2:
             number1, number2 = number2, number1
         number2 = number2 % number1
