@@ -16,11 +16,17 @@ def convert_to_string(progression):
 
 
 def get_question_and_answer():
-    initial_term = random.randint(1, 100)
-    difference = random.randint(1, 10)
-    hidden = random.randint(2, 10)
-    length = 10
-    progression = get_progression(initial_term, difference, length)
+    MIN_NUMBER = 1
+    MAX_NUMBER = 100
+    MIN_DIFFERENCE = 1
+    MAX_DIFFERENCE = 10
+    MIN_HIDDEN_NUMBER = 2
+    MAX_HIDDEN_NUMBER = 10
+    PROGRESSION_LENGTH = 10
+    initial_term = random.randint(MIN_NUMBER, MAX_NUMBER)
+    difference = random.randint(MIN_DIFFERENCE, MAX_DIFFERENCE)
+    hidden = random.randint(MIN_HIDDEN_NUMBER, MAX_HIDDEN_NUMBER)
+    progression = get_progression(initial_term, difference, PROGRESSION_LENGTH)
     answer, progression[hidden] = progression[hidden], '..'
     question = convert_to_string(progression)
     return question, str(answer)

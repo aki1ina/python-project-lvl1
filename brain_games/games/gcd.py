@@ -13,8 +13,10 @@ def get_answer(number1, number2):
 
 
 def get_question_and_answer():
-    number1 = random.randint(0, 150)
-    number2 = random.randint(0, 150)
+    MIN_NUMBER = 0
+    MAX_NUMBER = 150
+    number1 = random.randint(MIN_NUMBER, MAX_NUMBER)
+    number2 = random.randint(MIN_NUMBER, MAX_NUMBER)
     question = f'{number1} {number2}'
     answer = get_answer(number1, number2)
     return question, answer
