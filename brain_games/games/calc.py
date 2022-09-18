@@ -2,11 +2,11 @@ import random
 
 
 RULES = 'What is the result of the expression?'
+MIN_NUMBER = 0
+MAX_NUMBER = 150
 
 
 def get_question_and_answer():
-    MIN_NUMBER = 0
-    MAX_NUMBER = 150
     number1 = random.randint(MIN_NUMBER, MAX_NUMBER)
     number2 = random.randint(MIN_NUMBER, MAX_NUMBER)
     action = random.choice([' + ', ' - ', ' * '])
