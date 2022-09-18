@@ -10,7 +10,7 @@ def is_prime(question):
     for i in range(2, question):
         if question % i == 0:
             return False
-        return True
+    return True
 
 
 def get_question_and_answer():
