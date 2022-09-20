@@ -17,8 +17,8 @@ def get_progression(initial_term, difference, length):
     return progression
 
 
-def convert_to_string(progression, hidden):
-    progression[hidden] = '..'
+def convert_to_string(progression, hidden_term_index):
+    progression[hidden_term_index] = '..'
     progression_string = ' '.join(map(str, progression))
     return progression_string
 
@@ -26,8 +26,8 @@ def convert_to_string(progression, hidden):
 def get_question_and_answer():
     initial_term = random.randint(MIN_NUMBER, MAX_NUMBER)
     difference = random.randint(MIN_DIFFERENCE, MAX_DIFFERENCE)
-    hidden = random.randint(MIN_HIDDEN_NUMBER, MAX_HIDDEN_NUMBER)
+    hidden_term_index = random.randint(MIN_HIDDEN_NUMBER, MAX_HIDDEN_NUMBER)
     progression = get_progression(initial_term, difference, PROGRESSION_LENGTH)
-    answer = progression[hidden]
-    question = convert_to_string(progression, hidden)
+    answer = progression[hidden_term_index]
+    question = convert_to_string(progression, hidden_term_index)
     return question, str(answer)
