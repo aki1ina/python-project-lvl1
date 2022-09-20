@@ -11,12 +11,12 @@ def get_gcd(number1, number2):
         if number1 > number2:
             number1, number2 = number2, number1
         number2 = number2 % number1
-    return str(number1)
+    return number1
 
 
 def get_question_and_answer():
     number1 = random.randint(MIN_NUMBER, MAX_NUMBER)
     number2 = random.randint(MIN_NUMBER, MAX_NUMBER)
     question = f'{number1} {number2}'
-    answer = get_gcd(number1, number2)
+    answer = str(get_gcd(number1, number2))
     return question, answer
